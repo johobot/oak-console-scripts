@@ -56,7 +56,7 @@ import static org.apache.jackrabbit.oak.commons.IOUtils.humanReadableByteCount
 @CompileStatic
 class RepoStats {
     final boolean excludeIndexStats = Boolean.getBoolean("excludeIndexStats")
-    final String rootPath = System.getProperty("rootPath", "/content/dam/mcdassets/mcdtools")
+    final String rootPath = System.getProperty("rootPath", "/content/dam/mcdassets")
 
     final static String VERSION = "1.2"
 
