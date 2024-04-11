@@ -118,6 +118,7 @@ class RepoStats {
         root = getTree(root, rootPath)
         getFilteringTraversor(root).each { Tree t ->
             def path = t.path
+            println(path + " the size of the node is " + path.getTotalSize);
             if (path.endsWith('oak:index')){
                 if (!excludeIndexStats) {
                     long count = collectIndexStats(t)
