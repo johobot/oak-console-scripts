@@ -35,7 +35,7 @@ import javax.jcr.PropertyType
 @CompileStatic
 class NodeSizeWriter {
 
-    long sizeThreshold = Integer.getInteger("biggerThan", 100_000)
+    long sizeThreshold = Integer.getInteger("biggerThan", 16_000_000)
     String fileName = "node-sizes.txt"
     NodeStore nodeStore
     long bigNodeCount
